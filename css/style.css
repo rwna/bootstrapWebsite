@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --dark-color:rgb(7, 27, 92);
+    --green-color:rgb(20, 165, 153);
+    --orage-color: rgb(179, 51, 5);
+    --yellow-color :rgb(230, 183, 29);
+    --section-color: rgb(213, 216, 219);
+  
+
+ 
+}
+
+
+body{
+    font-family: 'Righteous', cursive;
+    
+}
+
+.navbar{
+    background-color: var(--dark-color);
+}
+.navbar-brand img{
+    height: 40px;
+    width:70px;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: rgb(242, 246, 250);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: rgb(20, 165, 153);
+
+}
+
+.navbar .search{
+border-left: 1px solid var(--green-color);
+}
+.navbar .search i{
+    color: rgb(20, 165, 153);
+}
+.navbar .navbar-toggler{
+    color: rgb(245, 250, 253);
+    font-size: 24px;
+    border-color: aliceblue;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true" ]{
+color:var(--green-color) }
+
+
+.landing{
+    background-color: var(--dark-color);
+   
+    min-height:calc(100vh - 65px ) ;
+}
+
+.feature-icon{
+    font-size: 60px;
+    font-weight: 100;
+    color: var(--yellow-color);
+}
+
+/* //////////////nav///////////// */
+.main-title::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    bottom:  -18px;
+    left: 50%;
+    transform: translate(-50% );
+    
+}
+.main-title  h2{
+    font-size: 36px;
+}
+.feature .icon-holder{
+    height: 200px;
+
+    left: 50%;
+    transform: translateX(-50% );
+}
+.feature .icon-holder .number{
+  font-size: 12rem;
+  color: var(--section-color);
+  position: relative;
+
+}
+
+.feature .icon-holder .icon{
+    color: var(--green-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50% );
+    margin-top: 130px;
+}
+
+.feature .feat h4{
+    color: var(--yellow-color);
+}
+/* //////////////////our work//////////////////// */
+.our-work{
+    background-color: var(--section-color);
+
+}
+.our-work ul .active{
+    background-color: red;
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    /* color: var(--yellow-color); */
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.our-work ul li:not(.active):hover{
+    color: red;
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box img{
+    width: 100%;
+    height: 250px;
+   
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(20, 165, 153,0.4);
+    width:calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-size: 28px;
+    transform: translateX(calc(100%  + 7px));
+
+}
+.our-work .box:hover::before{
+transform: translateX(0);
+}
+.bot .btn{
+    background-color:red
+    
+}
+/* //////////////////////////// */
+.stuff .description{
+    max-width: 500px;
+    /* text-align: center; */
+}
+/* //////////////////////////////team////////////// */
+.team{
+    background-color: var(--section-color);
+}
+.title{
+    color: var(--yellow-color);
+}
+.team .box h4{
+    background-color: var(--green-color);
+}
+.project{
+    background-color: var(--dark-color);
+}
+/* ////////////////////////////////subiscribe////////////////// */
+.subiscribe{
+background-color: var(--yellow-color);
+}
+
+.subiscribe .enter{
+border:none;
+border-bottom: 1px solid white;
+}
+.subiscribe .enter:focus{
+    outline: none;
+}
+.subiscribe ::placeholder{
+    color: white;
+}
+.subiscribe .botn{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+/* //////////////////////footer/////////////////// */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copywrite > span{
+color: var(--green-color); 
+}
+.footer .copywrite div span{
+    color: var(--yellow-color);
+}
+
+.contact ul li a i{
+    font-size: 30px;
+    
+}
+.contact ul li a  .facebook{
+    color:white
+}
+.insta{
+   color: rgb(202, 69, 180);
+}
+.linkedin{
+    color: rgb(240, 46, 62);
+}
+.whatsapp{
+    color: rgb(13, 153, 106);
+}
